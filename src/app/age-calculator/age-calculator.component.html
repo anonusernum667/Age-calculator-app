@@ -1,0 +1,40 @@
+<div class="body">
+  <div id="maincont">
+    <div id="inputcont">
+      <div>
+        <p class="nn">DAY</p>
+        <input class="tt" id="dayin" placeholder="DD" [(ngModel)]="day" />
+        <p class="error" id="dayerror">{{ dayError }}</p>
+      </div>
+      <div>
+        <p class="nn">MONTH</p>
+        <input class="tt" id="monthin" placeholder="MM" [(ngModel)]="month" />
+        <p class="error" id="montherror">{{ monthError }}</p>
+      </div>
+      <div>
+        <p class="nn">YEAR</p>
+        <input class="tt" id="yearin" placeholder="YYYY" [(ngModel)]="year" />
+        <p class="error" id="yearerror">{{ yearError }}</p>
+      </div>
+    </div>
+    <div id="buttoncont">
+      <button id="subm" (click)="calculateAge()">></button>
+    </div>
+    <hr />
+    <div id="outcont">
+      <div class="yearout">
+        <span class="num" id="yearoutext">{{ ageInYears }}</span><span class="tex">years</span>
+      </div>
+      <div class="monthout">
+        <span class="num" id="monthoutext">{{ ageInMonths }}</span><span class="tex">months</span>
+      </div>
+      <div class="dayout">
+        <span class="num" id="dayoutext">{{ ageInDays }}</span><span class="tex">days</span>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">MOHAMMAD ALHASSANe</a>.
+  </div>
+</div>

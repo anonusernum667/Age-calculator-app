@@ -1,0 +1,114 @@
+@font-face {
+  font-family: lite;
+  src: url(../../assets/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: med;
+  src: url(../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: bld;
+  src: url(../../assets/fonts/Poppins-BlackItalic.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  height: inherit;
+}
+
+#maincont {
+  background-color: #C0C0C0;
+  padding: 20px 50px;
+  border-radius: 20px 20px 100px 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+#inputcont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.nn {
+  font-family: lite;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.tt {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0.5;
+  font-family: med;
+  transition-duration: 500ms;
+}
+
+.tt:hover {
+  opacity: 0.9;
+}
+
+#buttoncont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#buttoncont button {
+  color: white;
+  font-size: 30px;
+  font-family: lite;
+  background-color: blueviolet;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transition-duration: 500ms;
+}
+
+#buttoncont button:hover {
+  background-color: black;
+  box-shadow: 0 0 20px blueviolet;
+}
+
+hr {
+  width: 90%;
+  margin: 20px auto;
+  border: 0.5px solid #ccc;
+}
+
+#outcont {
+  font-size: 50px;
+  font-family: bld;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px;
+}
+
+.num {
+  color: blueviolet;
+}
+
+@media (max-width: 670px) {
+  #outcont {
+    font-size: 40px;
+    display: flex
+    ;
+    flex-direction: column  ;
+    gap: 30px;
+  }
+}
